@@ -1,9 +1,82 @@
 <!DOCTYPE html>
-   <html>
-   <head>
-       <title>Test</title>
-   </head>
-   <body>
-       <h1>Hallo Welt!</h1>
-   </body>
-   </html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hierarchisches Clustering</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+            overflow: hidden;
+        }
+        header {
+            background: #2c3e50;
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        .subtitle {
+            font-size: 1.1em;
+            opacity: 0.9;
+        }
+        .content {
+            padding: 30px;
+        }
+        iframe {
+            width: 100%;
+            height: 600px;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+        }
+        .download {
+            text-align: center;
+            margin-top: 20px;
+        }
+        a {
+            display: inline-block;
+            background: #667eea;
+            color: white;
+            padding: 12px 30px;
+            text-decoration: none;
+            border-radius: 6px;
+            transition: background 0.3s;
+        }
+        a:hover {
+            background: #764ba2;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Hierarchisches Clustering</h1>
+            <p class="subtitle">Wenn K unbekannt ist</p>
+        </header>
+        <div class="content">
+            <iframe src="pdfs/jeanne.pdf"></iframe>
+            <div class="download">
+                <a href="pdfs/jeanne.pdf" download>📥 PDF herunterladen</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
